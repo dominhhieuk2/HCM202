@@ -24,20 +24,39 @@
             height: auto;
         }
 
-        /* CSS để làm cho hình ảnh nhỏ lại */
         .img-pop-home {
             display: block;
             width: 100%;
-            max-width: 200px;
-            /* Thay đổi kích thước tối đa của hình ảnh */
+            max-width: 300px;
             margin: 0 auto;
-            /* Căn giữa hình ảnh nếu cần */
         }
 
         .img-fluid {
             max-width: 100%;
             height: auto;
-            /* Đảm bảo tỷ lệ khung hình của hình ảnh không bị thay đổi */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .highlighted-text {
+            font-style: italic; 
+        }
+        .highlighted-text::before {
+            content: "* "; 
+            color: red; 
+            font-style: normal;
         }
     </style>
 
@@ -87,8 +106,9 @@
                         <li class="menu-active"><a href="#home">Trang chủ</a></li>
                         <li><a href="#about">Giới thiệu</a></li>
                         <li><a href="#coffee">Tổng quan</a></li>
-                        <li><a href="#gallery">Nội dung chính</a></li>
-                        <li><a href="#review">Review</a></li>
+                        <li><a href="#review">Thông số</a></li>
+                        <li><a href="#slide">Nội dung chính</a></li>
+                        <li><a href="#cq">CQ</a></li>
                         <li><a href="#blog">Câu hỏi</a></li>
                     </ul>
                 </nav><!-- #nav-menu-container -->
@@ -220,47 +240,7 @@
     </section>
     <!-- End menu Area -->
 
-    <!-- Start gallery Area -->
-    <section class="gallery-area section-gap" id="gallery">
-        <div class="container">
-            <div class="row d-flex justify-content-center">
-                <div class="menu-content pb-60 col-lg-10">
-                    <div class="title text-center">
-                        <h1 class="mb-10">Nội dung môn học</h1>
-                        <p>Môn học Tư tưởng Hồ Chí Minh được chia thành nhiều chuyên đề với các nội dung chính như:</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4">
-                    <a href="img/sach1.jpg" class="img-pop-home">
-                        <img class="img-fluid" src="img/sach1.jpg" alt="">
-                    </a>
-                    <a href="img/sach2.jpg" class="img-pop-home">
-                        <img class="img-fluid" src="img/sach2.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-8">
-                    <a href="img/sach3.jpg" class="img-pop-home">
-                        <img class="img-fluid" src="img/sach3.jpg" alt="">
-                    </a>
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <a href="img/sach4.jpg" class="img-pop-home">
-                                <img class="img-fluid" src="img/sach4.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="col-lg-6">
-                            <a href="img/sach5.jpg" class="img-pop-home">
-                                <img class="img-fluid" src="img/sach5.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End gallery Area -->
+            
 
     <!-- Start review Area -->
     <section class="review-area section-gap" id="review">
@@ -328,15 +308,132 @@
     </section>
     <!-- End review Area -->
 
+    <!-- Start gallery Area -->
+    <section class="gallery-area section-gap" id="gallery">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="menu-content pb-60 col-lg-10">
+                    <div class="title text-center">
+                        <h1 class="mb-10">Tư tưởng Hồ Chí Minh</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <a href="img/hcm1.jpg" class="img-pop-home">
+                        <img class="img-fluid" src="img/hcm1.jpg" alt="">
+                    </a>
+                    <a href="img/hcm2.jpg" class="img-pop-home">
+                        <img class="img-fluid" src="img/hcm2.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-8">
+                    <a href="img/hcm3.jpg" class="img-pop-home">
+                        <img class="img-fluid" src="img/hcm3.jpg" alt="">
+                    </a>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <a href="img/hcm4.jpg" class="img-pop-home">
+                                <img class="img-fluid" src="img/hcm4.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="col-lg-6">
+                            <a href="img/hcm5.jpg" class="img-pop-home">
+                                <img class="img-fluid" src="img/hcm5.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End gallery Area -->
+
+    
+
+    <!-- Start slide Area -->
+    <section class="review-area section-gap" id="slide">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="menu-content pb-60 col-lg-10">
+                    <div class="title text-center">
+                        <h1 class="mb-10">Nội dung Chương 4</h1>
+                    </div>
+                </div>
+            </div>
+            <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+                <iframe loading="lazy"
+                    style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGNLoVk1YY&#x2F;_3bnQ74rnUu0W1PF_vVsKw&#x2F;view?embed"
+                    allowfullscreen="allowfullscreen" allow="fullscreen">
+                </iframe>
+            </div>
+
+        </div>
+    </section>
+    <!-- End slide Area -->
+
+    <!-- Start CQ Area -->
+    <section class="menu-area section-gap" id="cq">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="menu-content pb-60 col-lg-10">
+                    <div class="title text-center">
+                        <h1 class="mb-10">CQ: Hồ Chí Minh chú trọng xây dựng Đảng Cộng sản Việt Nam thành đảng kiểu mới, vậy đảng này theo Bác khác gì với các đảng chính trị khác trên thế giới?
+                        </h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Trung Quốc Quốc dân Đảng</th>
+                        <th>Đảng dân chủ ở Mỹ</th>
+                        <th>Đảng cộng sản theo quan điểm chủ nghĩa Mác - Lênin</th>
+                        <th>Đảng cộng sản theo tư tưởng Hồ Chí Minh ở Việt Nam</th>
+                    </tr>
+                    <tr>
+                        <td>Lý tưởng</td>
+                        <td>Dựa trên chủ nghĩa Tam Dân của Tôn Trung Sơn, bao gồm dân tộc độc lập, dân quyền tự do và dân sinh hạnh phúc</td>
+                        <td>Quan điểm chính trị của Đảng Dân chủ bắt nguồn từ phong trào tiến bộ ở Mỹ và từ hệ tư tưởng của những nhà trí thức như John Dewey.</td>
+                        <td>Kết hợp giữa 2 yếu tố là chủ nghĩa Mác - Lênin(chủ nghĩa xã hội khoa học) với phong trào công nhân mang mục đích của đại đa số nhân dân lao động</td>
+                        <td>Sự ra đời của Đảng Cộng sản Việt Nam là kết quả của sự kết hợp chủ nghĩa Mác - Lênin(chủ nghĩa xã hội khoa học) với phong trào công nhân và phong trào yêu nước ( dẫn chứng : từ 1925 hàng loạt tổ chức yêu nước ra đời, nổi bật nhất là tổ chức Hội Việt Nam Cách mệnh Thanh niên do Hồ Chí Minh lập ra ). Đại diện cho toàn bộ người dân Việt Nam.</td>
+                    </tr>
+                    <tr>
+                        <td>Mục tiêu chính trị</td>
+                        <td>Mục tiêu là xây dựng một quốc gia dân chủ, độc lập và thịnh vượng, với sự phát triển kinh tế và xã hội hài hòa</td>
+                        <td>Ủng hộ quyền tự do dân sự, tự do xã hội, bình đẳng, cơ hội đồng đều, và hệ thống doanh nghiệp tự do được điều tiết bởi sự can thiệp của chính quyền. Đảng Dân chủ tin rằng chính quyền nên thủ giữ một vai trò trong nỗ lực giảm nghèo và xoá bỏ những bất công xã hội, ngay cả khi điều này có nghĩa là phải dành cho chính quyền nhiều quyền lực hơn cũng như phải tăng thuế để chi trả cho các dịch vụ xã hội.</td>
+                        <td>Trong xã hội xây dựng trên cơ sở phân chia giai cấp, cuộc đấu tranh giữa các giai cấp thù địch, đến một chừng mực nào đó, sẽ trở thành đấu tranh chính trị. Đấu tranh của Đảng là phản ánh đấu tranh chính trị của giai cấp có giá trị đầy đủ và có thể thức dứt khoát nhất. Xây dựng chủ nghĩa xã hội và chủ nghĩa cộng sản không còn giai cấp</td>
+                        <td>Giải phóng dân tộc đem lại độc lập cho dân tộc được đặt lên hàng đầu, tiếp đó cách mạng phải tiến lên giai đoạn xã hội chủ nghĩa, cộng sản chủ nghĩa để thực sự giải phóng giai cấp, giải phóng con người, đem lại ấm no, tự do, hạnh phúc cho nhân dân, con người được phát triển toàn diện.</td>
+                    </tr>
+                    <tr>
+                        <td>Đối tượng kết nạp</td>
+                        <td>tầng lớp lao động</td>
+                        <td>Tầng lớp Chuyên môn,Giới trẻ,Tầng lớp Lao động,Dân tộc Thiểu số</td>
+                        <td>giai cấp công nhân là lực lượng nòng cốt. giai cấp công nhân</td>
+                        <td>Hồ Chí Minh không chỉ giới hạn lực lượng cách mạng ở giai cấp công nhân, mà còn mở rộng ra các tầng lớp khác như nông dân, tiểu tư sản, trí thức, và các lực lượng yêu nước khác.</td>
+                    </tr>
+                </table>
+                <p class="highlighted-text">
+                    Người khẳng định vấn đề có ý nghĩa quyết định trong xây dựng Đảng là: “Đảng muốn vững thì phải có chủ nghĩa làm cốt, trong đảng ai cũng phải hiểu, ai cũng phải theo chủ nghĩa ấy. Đảng mà không có chủ nghĩa cũng như người không có trí khôn, tàu không có bàn chỉ nam. Bây giờ học thuyết nhiều, chủ nghĩa nhiều, nhưng chủ nghĩa chân chính nhất, chắc chắn nhất, cách mệnh nhất là chủ nghĩa Lênin”
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- End CQ Area -->
+
     <!-- Start blog Area -->
     <section class="blog-area section-gap" id="blog">
         <div class="container">
             <!-- FAQs Start -->
             <div class="faqs">
                 <div class="container">
-                    <div class="section-header text-center">
-                        <p>Câu hỏi thường gặp</p>
+                    <div class="title text-center">
                         <h2>Bạn có thể thắc mắc?</h2>
+                        <p>Câu hỏi thường gặp</p>
                     </div>
                     <div class="row">
                         <div class="col-md-6">
@@ -357,31 +454,47 @@
                                 </div>
                                 <div class="card wow fadeInLeft" data-wow-delay="0.2s">
                                     <div class="card-header">
-                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseTwo">
-                                            Nội dung chính của môn học Tư tưởng Hồ Chí Minh là gì?
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapse2">
+                                            Có bao nhiêu yêu cầu chủ yếu đối với đội ngũ cán bộ, đảng viên ? 
                                         </a>
                                     </div>
-                                    <div id="collapseTwo" class="collapse" data-parent="#accordion-1">
+                                    <div id="collapse2" class="collapse" data-parent="#accordion-1">
                                         <div class="card-body">
-                                            Trả lời: Môn học Tư tưởng Hồ Chí Minh bao gồm các nội dung chính như: Tư
-                                            tưởng Hồ Chí Minh về độc lập dân tộc và chủ nghĩa xã hội, quan điểm về Đảng
-                                            Cộng sản Việt Nam, đoàn kết dân tộc và quốc tế, cùng với các giá trị đạo đức
-                                            và phong cách lãnh đạo của Hồ Chí Minh.
+                                            Trả lời: Đội ngũ cán bộ, đảng viên cần đáp ứng 7 yêu cầu chủ yếu sau:
+                                        </br>- Phải tuyệt đối trung thành với Đảng
+                                        </br>- Phải là những người nghiêm chỉnh thực hiện cương lĩnh, đường lối, quan điểm, chủ trương, nghị quyết của Đảng và các nguyên tắc xây dựng Đảng 
+                                        </br>- Phải luôn luôn tu dưỡng, rèn luyện, trau dồi đạo đức cách mạng
+                                        </br>- Phải luôn luôn học tập nâng cao trình độ về mọi mặt
+                                        </br>- Phải có mối liên hệ mật thiết với nhân dân
+                                        </br>- Phải luôn luôn chịu trách nhiệm, năng động, sáng tạo
+                                        </br>- Phải là những người luôn luôn phòng và chống các tiêu cực
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInLeft" data-wow-delay="0.3s">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapse3">
+                                            Môn học Tư tưởng Hồ Chí Minh được giảng dạy như thế nào?
+                                        </a>
+                                    </div>
+                                    <div id="collapse3" class="collapse" data-parent="#accordion-1">
+                                        <div class="card-body">
+                                            Trả lời: Môn học được giảng dạy qua các bài giảng lý thuyết kết hợp với các
+                                            hoạt động thảo luận nhóm, nghiên cứu tình huống và các dự án thực tiễn.
+                                            Phương pháp giảng dạy nhằm giúp sinh viên không chỉ hiểu biết lý thuyết mà
+                                            còn áp dụng được vào thực tiễn.
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card wow fadeInLeft" data-wow-delay="0.3s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseThree">
-                                            Môn học Tư tưởng Hồ Chí Minh được giảng dạy như thế nào?
+                                            Tác phẩm Đường Kách mệnh phát hành vào năm nào ?
                                         </a>
                                     </div>
                                     <div id="collapseThree" class="collapse" data-parent="#accordion-1">
                                         <div class="card-body">
-                                            Trả lời: Môn học được giảng dạy qua các bài giảng lý thuyết kết hợp với các
-                                            hoạt động thảo luận nhóm, nghiên cứu tình huống và các dự án thực tiễn.
-                                            Phương pháp giảng dạy nhằm giúp sinh viên không chỉ hiểu biết lý thuyết mà
-                                            còn áp dụng được vào thực tiễn.
+                                            Trả lời: Tác phẩm "Đường Kách mệnh" của Nguyễn Ái Quốc (Hồ Chí Minh) được phát hành vào năm 1927. 
                                         </div>
                                     </div>
                                 </div>
@@ -397,20 +510,6 @@
                                             qua các bài kiểm tra, tiểu luận, bài thuyết trình và sự tham gia vào các
                                             hoạt động học tập. Đánh giá cũng có thể dựa trên các dự án nghiên cứu và
                                             thảo luận nhóm.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card wow fadeInLeft" data-wow-delay="0.5s">
-                                    <div class="card-header">
-                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseFive">
-                                            Tài liệu nào là chính thức cho môn học Tư tưởng Hồ Chí Minh?
-                                        </a>
-                                    </div>
-                                    <div id="collapseFive" class="collapse" data-parent="#accordion-1">
-                                        <div class="card-body">
-                                            Trả lời: Các tài liệu chính thức bao gồm các sách giáo trình do các nhà xuất
-                                            bản chính trị quốc gia và các cơ sở giáo dục phát hành. Ngoài ra, còn có
-                                            nhiều tài liệu nghiên cứu và bài báo liên quan để bổ sung kiến thức.
                                         </div>
                                     </div>
                                 </div>
@@ -435,16 +534,12 @@
                                 <div class="card wow fadeInRight" data-wow-delay="0.2s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseSeven">
-                                            Môn học này có ảnh hưởng gì đến sự nghiệp sau này không?
+                                            Sự khác nhau giữa Đảng cộng sản theo tư tưởng Hồ Chí Minh ở Việt Nam và Đảng cộng sản theo quan điểm chủ nghĩa Mác - Lênin là gì?
                                         </a>
                                     </div>
                                     <div id="collapseSeven" class="collapse" data-parent="#accordion-2">
                                         <div class="card-body">
-                                            Trả lời: Kiến thức từ môn học Tư tưởng Hồ Chí Minh giúp sinh viên phát triển
-                                            tư duy chính trị và phẩm chất đạo đức, điều này có thể hỗ trợ trong các lĩnh
-                                            vực công tác xã hội, chính trị, và quản lý. Việc hiểu rõ tư tưởng Hồ Chí
-                                            Minh cũng giúp sinh viên có cái nhìn sâu sắc hơn về các vấn đề xã hội và
-                                            chính trị.
+                                            Trả lời: Tư tưởng Hồ Chí Minh đã kết hợp lý luận của chủ nghĩa Mác - Lênin với truyền thống yêu nước và cách mạng của dân tộc Việt Nam. Hồ Chí Minh đã nhấn mạnh việc kết hợp "phong trào yêu nước" với phong trào công nhân để xây dựng đường lối cách mạng phù hợp với điều kiện cụ thể của Việt Nam.
                                         </div>
                                     </div>
                                 </div>
@@ -465,16 +560,15 @@
                                 <div class="card wow fadeInRight" data-wow-delay="0.4s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseNine">
-                                            Môn học Tư tưởng Hồ Chí Minh có liên quan đến các môn học khác không?
+                                            Các nguyên tắc hoạt động của Đảng Cộng sản Việt Nam là gì?
                                         </a>
                                     </div>
                                     <div id="collapseNine" class="collapse" data-parent="#accordion-2">
                                         <div class="card-body">
-                                            Trả lời: Có, môn học Tư tưởng Hồ Chí Minh thường liên quan đến các môn học
-                                            khác như Lịch sử Đảng Cộng sản Việt Nam, Đạo đức chính trị, và Các nguyên lý
-                                            cơ bản của chủ nghĩa Mác-Lênin. Kiến thức từ môn học này giúp sinh viên có
-                                            cái nhìn toàn diện hơn về lý luận chính trị và quá trình phát triển của xã
-                                            hội Việt Nam.
+                                            Trả lời: Các nguyên tắc hoạt động của Đảng Cộng sản Việt Nam bao gồm:
+                                        </br>- Chủ nghĩa Mác - Lênin làm nền tảng tư tưởng và kim chỉ nam cho hành động
+                                        </br>- Tập trung dân chủ
+                                        </br>- Tự phê bình và phê bình
                                         </div>
                                     </div>
                                 </div>
@@ -494,6 +588,18 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="card wow fadeInRight" data-wow-delay="0.5s">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapse10">
+                                            Đảng Cộng sản Việt Nam ra đời vào ngày tháng năm nào?
+                                        </a>
+                                    </div>
+                                    <div id="collapse10" class="collapse" data-parent="#accordion-2">
+                                        <div class="card-body">
+                                            Trả lời: Đảng Cộng sản Việt Nam ra đời vào ngày 3/2/1930.
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -503,7 +609,6 @@
         </div>
     </section>
     <!-- End blog Area -->
-
 
     <!-- start footer Area -->
     <footer class="footer-area section-gap">
